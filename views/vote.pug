@@ -1,0 +1,13 @@
+extends main.pug
+
+block main-section
+    .complete-info
+        h1 Now you got only one chance to vote be careful
+    .main-form
+        form(action="/vote", method="POST")
+            each value in votingCandidates
+                div
+                    label(for=`${value.id}`) #{value.name}
+                    input(type="radio", name="candidate", id=`${value.id}`, value=`${value.id}`)
+            
+            button(type="submit") Submit Vote

@@ -1,0 +1,19 @@
+extends main.pug
+
+block main-section
+    .buttons
+        .login-button
+            a(href="/login/details") Login
+        
+        .signup-button
+            a(href="/signup") Signup
+        
+        .google-signup-button
+            a(href="/auth/google") 
+                span Sign up with Google
+                img(src="/static/icon/search.png", alt="google-logo")
+        
+        //- .facebook-signup-button
+        //-     a(href="/auth/facebook")
+        //-         img(src="/static/icon/facebook.png", alt="facebook-logo")
+        //-         span Continue with Facebook

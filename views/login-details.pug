@@ -1,0 +1,32 @@
+extends main.pug
+
+block main-section
+    if msg
+        .msg-display
+            p Wrong Email or Password
+
+    .main-form
+        form(action="/login/details", method="POST")
+            div
+                label(for="email") Email
+                input(type="email", id="email", name="email", required=true)
+            div
+                label(for="password") Password
+                input(type="password", id="password", name="password", required=true)
+            div
+                button Login
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

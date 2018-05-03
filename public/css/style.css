@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #f4f4f4;
+  line-height: 1.5; }
+
+.container {
+  width: 90%;
+  margin: auto; }
+
+#main-content {
+  height: 100vh; }
+
+header {
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white; }
+  header h1 {
+    font-size: 18px;
+    text-align: center; }
+
+footer {
+  font-weight: bold;
+  padding: 5px;
+  background-color: #2c3e50;
+  text-align: center;
+  color: white;
+  font-size: 14px; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+/*=================== Home page ================== */
+.home-content {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.main-msg {
+  font-family: 'Carter One', cursive;
+  color: #249991; }
+
+.log-sign-link {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
+  font-weight: bold;
+  border-radius: 5px;
+  color: black; }
+  .log-sign-link:hover {
+    color: #249991;
+    border: 1px solid #249991; }
+
+/*============ login page ============= */
+.buttons {
+  margin-top: 100px; }
+  .buttons div {
+    margin-top: 10px; }
+  .buttons img {
+    width: 40px; }
+  .buttons a {
+    width: 195px; }
+
+.google-signup-button {
+  display: flex;
+  justify-content: center; }
+  .google-signup-button a {
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4885ed;
+    color: white; }
+  .google-signup-button a:hover {
+    box-shadow: 0px 0px 5px #4885ed; }
+  .google-signup-button img {
+    display: inline-block;
+    padding: 12px;
+    background-color: white; }
+  .google-signup-button span {
+    margin: 0 5px;
+    font-size: 14px;
+    display: inline-block; }
+
+.facebook-signup-button {
+  display: flex;
+  justify-content: center; }
+  .facebook-signup-button a {
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #3b5998; }
+  .facebook-signup-button a:hover {
+    box-shadow: 0px 0px 5px #3b5998; }
+  .facebook-signup-button img {
+    display: inline-block;
+    padding: 12px;
+    background-color: white; }
+  .facebook-signup-button span {
+    margin: 0 5px;
+    font-size: 12px;
+    display: inline-block; }
+
+.login-button, .signup-button {
+  display: flex;
+  justify-content: center; }
+  .login-button a, .signup-button a {
+    text-align: center;
+    padding: 7px;
+    color: white; }
+
+.login-button a {
+  background-color: #27ae60; }
+  .login-button a:hover {
+    box-shadow: 0px 0px 5px #27ae60; }
+
+.signup-button a {
+  background-color: #F04903; }
+  .signup-button a:hover {
+    box-shadow: 0px 0px 5px #F04903; }
+
+/* =========== SIGN-UP STYLES ================ */
+.msg-display {
+  background-color: #CF000F;
+  text-align: center;
+  max-width: 80%;
+  margin: 10px auto;
+  color: white;
+  padding: 10px;
+  border-radius: 5px; }
+
+.main-form {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 20px;
+  max-width: 600px;
+  margin: 20px auto; }
+
+.main-form form div {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between; }
+.main-form form input {
+  border: 1px solid black;
+  padding: 5px; }
+.main-form form input[type="email"], .main-form form input[type="password"], .main-form form input[type="text"] {
+  width: 250px; }
+.main-form form button {
+  width: 100%;
+  border: 2px solid #2c3e50;
+  padding: 7px;
+  background-color: #2c3e50;
+  color: white;
+  font-weight: bold; }
+  .main-form form button:hover {
+    background-color: transparent;
+    color: #2c3e50;
+    border: 2px solid #2c3e50;
+    cursor: pointer; }
+
+.main-form form p {
+  display: flex;
+  align-items: center; }
+  .main-form form p label {
+    margin-right: 5px; }
+
+.complete-info {
+  margin: 10px;
+  background-color: #27ae60; }
+  .complete-info h1 {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    padding: 7px; }
+
+/*# sourceMappingURL=style.css.map */

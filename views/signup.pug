@@ -1,0 +1,47 @@
+extends main.pug
+
+block main-section
+    if msg
+        .msg-display
+            p Sorry choose another email address this is already taken
+
+    .main-form
+        form(action="/signup", method="POST")
+            div
+                label(for="firstName") First Name
+                input(type="text" id="firstName" name="firstName" required=true) 
+
+            div
+                label(for="lastName") Last Name
+                input(type="text" id="lastName" name="lastName" required=true)
+
+            div
+                label(for="emailAddress") Email
+                input(type="email", name="email", id="emailAddress", required=true)
+
+            div
+                label(for="password") Password
+                input(type="password", name="password", id="password", required=true)
+
+            div
+                label Gender
+                p
+                    label(for="male") Male
+                    input(type="radio", id="male",name="gender", value="male", class="light")
+                p
+                    label(for="female") Female
+                    input(type="radio", id="female", name="gender", value="female", class="light")
+                p
+                    label(for="others") Others
+                    input(type="radio", id="others", name="gender", value="others", class="light")
+            
+            div
+                label(for="voterNumber") Voter ID Number
+                input(type="text", id="voterNumber", required=true, name="voterNumber")
+
+            div
+                label(for="aadharNumber") Aadhar Number
+                input(type="text", id="aadharNumber", required=true, name="aadharNumber")
+            
+            div
+                button Submit

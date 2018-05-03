@@ -1,0 +1,14 @@
+extends main.pug
+
+block main-section
+    .complete-info
+        h1 Your vote has been accepted
+    
+    .votedTo
+        div
+            h1 Your have voted to : 
+            div
+                p Name : #{object.name}
+                p Id : #{object._id}
+                p Total votes : #{object.votes}
+            
